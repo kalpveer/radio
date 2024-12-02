@@ -4,20 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unified Radio FM</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background: #ff888e;
+            color: #fff;
         }
 
         header {
-            background: #0077ff;
-            color: white;
-            padding: 1em;
+            background: #1e293b;
+            color: #fff;
+            padding: 1.5em;
             text-align: center;
+            border-bottom: 4px solid #ec4f57;
+        }
+
+        header h1 {
+            font-weight: 600;
+            margin: 0;
+        }
+
+        header p {
+            font-weight: 300;
+            margin: 0;
+            font-size: 1.1rem;
         }
 
         .station-container {
@@ -28,45 +44,83 @@
         }
 
         .station {
-            background: white;
-            border: 1px solid #ccc;
-            border-radius: 10px;
+            background: #1e293b;
+            border-radius: 15px;
             padding: 20px;
             text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .station:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .station h2 {
+            color: #ec4f57;
+            font-weight: 600;
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+
+        .station i {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #ec4f57;
         }
 
         iframe {
             border: none;
             width: 100%;
             height: 100px;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Unified Radio FM</h1>
-        <p>Listen to your favorite radio stations across the world</p>
+        <h1><i class="fas fa-broadcast-tower"></i> Unified Radio FM</h1>
+        <p>Your gateway to global radio stations</p>
     </header>
     <main>
         <section class="station-container">
             <div class="station">
+                <i class="fas fa-music"></i>
                 <h2>Vadodara</h2>
                 <iframe src="https://tunein.com/embed/player/s251022/" scrolling="no"></iframe>
             </div>
             <div class="station">
+                <i class="fas fa-music"></i>
                 <h2>Mumbai</h2>
                 <iframe src="https://tunein.com/embed/player/s183986/" scrolling="no"></iframe>
             </div>
             <div class="station">
+                <i class="fas fa-music"></i>
                 <h2>Islamabad</h2>
                 <iframe src="https://tunein.com/embed/player/s249315/" scrolling="no"></iframe>
             </div>
             <div class="station">
+                <i class="fas fa-music"></i>
                 <h2>Muzzafarabad</h2>
-               <iframe src="https://tunein.com/embed/player/s185890/" style="width:100%; height:100px;" scrolling="no" frameborder="no"></iframe>
+                <iframe src="https://tunein.com/embed/player/s185890/" scrolling="no"></iframe>
             </div>
         </section>
     </main>
+    <footer>
+        <p>Made with❤️ by <a href="https://www.instagram.com/kalp.veer">Kalp Name</a></p>
+    </footer>
 </body>
 </html>
