@@ -36,14 +36,14 @@
             font-size: 1.1rem;
         }
 
-        .station-container {
+        .station-container, .news-container {
             padding: 20px;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
         }
 
-        .station {
+        .station, .news {
             background: #1e293b;
             border-radius: 15px;
             padding: 20px;
@@ -52,19 +52,19 @@
             transition: transform 0.3s, box-shadow 0.3s;
         }
 
-        .station:hover {
+        .station:hover, .news:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
         }
 
-        .station h2 {
+        .station h2, .news h2 {
             color: #ec4f57;
             font-weight: 600;
             margin-bottom: 10px;
             font-size: 1.5rem;
         }
 
-        .station i {
+        .station i, .news i {
             font-size: 2rem;
             margin-bottom: 10px;
             color: #ec4f57;
@@ -118,9 +118,23 @@
                 <iframe src="https://tunein.com/embed/player/s185890/" scrolling="no"></iframe>
             </div>
         </section>
+
+        <!-- News Section -->
+        <section class="news-container">
+            <div class="news">
+                <i class="fas fa-newspaper"></i>
+                <h2>Hindi News</h2>
+                <iframe src="https://tunein.com/embed/player/s327997/" scrolling="no" frameborder="no"></iframe>
+            </div>
+            <div class="news">
+                <i class="fas fa-newspaper"></i>
+                <h2>English News</h2>
+                <iframe src="https://tunein.com/embed/player/s327998/" scrolling="no" frameborder="no"></iframe>
+            </div>
+        </section>
     </main>
     <footer>
-        <p>Made with❤️ by <a href="https://www.instagram.com/kalp.veer">Kalp</a></p>
+        <p>Made with ❤️ by <a href="https://www.instagram.com/kalp.veer">Kalp Name</a></p>
     </footer>
 </body>
 </html>
